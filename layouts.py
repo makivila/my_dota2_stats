@@ -1,6 +1,6 @@
 from dash import html, dcc
 
-from data import stats_kda, stats_side, stats_by_duration
+from data import stats_kda, stats_by_duration, stats_side
 from my_figure import fig
 
 

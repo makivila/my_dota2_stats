@@ -2,6 +2,7 @@ import pandas as pd
 import plotly.express as px
 import requests
 
+
 user = requests.get("https://api.opendota.com/api/players/1253662502")
 matches = requests.get("https://api.opendota.com/api/players/1253662502/matches")
 matches_is_rediant_win = requests.get(
@@ -123,6 +124,3 @@ stats_by_duration = (
     .sum()
     .reset_index()
 )
-
-
-# print(stats_by_duration)
