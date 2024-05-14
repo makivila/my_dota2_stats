@@ -105,7 +105,14 @@ stats_side = stats_side.reset_index()[
     ["localized_name", "radiant_win_percent", "dire_win_percent"]
 ]
 
+stats_side = pd.melt(
+    stats_side,
+    id_vars=["localized_name"],
+    var_name="win_side",
+    value_name="value_win_side",
+)
 
+print(stats_side)
 # Винрейт по длительности матча
 
 stats_by_duration = winners_matches

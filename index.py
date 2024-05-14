@@ -18,7 +18,7 @@ def update_graph(value):
 def update_graph(value):
     df = stats_side[stats_side.localized_name == value]
 
-    return px.bar(df, x=["radiant_win_percent", "dire_win_percent"])
+    return px.bar(df, x="win_side", y="value_win_side")
 
 
 @callback(Output("graph_category", "figure"), Input("dropdown-selection2", "value"))
