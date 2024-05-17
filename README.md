@@ -5,7 +5,7 @@
 
 ## Данные 
 
-Данные для анализа взяты с OpenDota API.
+Данные для анализа взяты с OpenDota API(https://docs.opendota.com/#section/Introduction).
 
 
 ## Графики
